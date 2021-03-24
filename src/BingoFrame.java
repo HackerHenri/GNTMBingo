@@ -116,9 +116,11 @@ public class BingoFrame extends JFrame implements ActionListener{
 			for (int j=0; j<6; j++) {
 				if(brett.getFeld(i, j) == 1) {
 					fieldButtons[i][j].setBackground(Color.green);
+					fieldButtons[i][j].setOpaque(true);
 				}
 				else {
 					fieldButtons[i][j].setBackground(Color.WHITE);
+					fieldButtons[i][j].setOpaque(true);
 				}
 			}
 		}
