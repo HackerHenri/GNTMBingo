@@ -71,7 +71,7 @@ public class BingoFrame extends JFrame implements ActionListener{
 		c.gridy=7; // last row
 		c.gridwidth=5; // 5 columns
 		c.gridheight=1;
-		c.weightx=5.0/7; // resizing -> only width changes
+		c.weightx=1; // resizing -> only width changes
 		c.weighty=0;
 		contentPane.add(message, c);
 		
@@ -82,7 +82,7 @@ public class BingoFrame extends JFrame implements ActionListener{
 		c.gridy=7;
 		c.gridwidth=2; // 2 columns
 		c.gridheight=1;
-		c.weightx=2.0/7; // resizing -> only width changes
+		c.weightx=1; // resizing -> only width changes
 		c.weighty=0;
 		contentPane.add(newGameButton,c);
 		newGameButton.setEnabled(true); // initially not enabled!

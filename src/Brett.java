@@ -9,19 +9,19 @@ import java.util.Random;
 public class Brett implements BingoBoard {
     private int[][] feld;
 
-    private String[] begriffe = {"Ein Model weint", "Es wird gekreischt", "Heidi sagt „Meine Mädchen“",
-    		"Jemand spricht unnötig Englisch", "„Es kann nur eine GNTM werden“", "„Ich habe heute leider kein Foto für dich“", 
-    		"Jemand stolpert oder verliert einen Schuh beim walk", "Heidi benutzt das Plusquamperfekt", 
-    		"Attitude", "„Nur eine kommt auf das Cover der deutschen Harpers Bazar“", "Die Mädchen werden gefittet", 
-    		"Soulin ist in einen Streit verwickelt", "Linda sagt/macht was unsympatisches", "Fotograf ist unzufrieden",
-    		"Jemand sagt was Dummes", "Jemand ist neidisch", "Schuhe oder Kleid unbequem oder passen nicht",
-    		"Ein Mädchen wackelt", "Es wird auf Corona Maßnahmen hingewiesen", "Diversity", "Es wird gelästert",
-    		"Lilliana ist ne Zicke", "Ein Mädchen vermisst Familie/Freund", "Es wird etwas geblurrt/zensiert",
-    		"„Das gab es noch nie bei GNTM!“", "„Wer hat das Zeug GNTM zu werden?“", "„Das allein reicht leider nicht“",
-    		"Corona Handshake", "Schleichwerbung", "Klamotten in denen man nicht laufen kann", "Gastjuror, den keiner kennt",
-    		"Jemand hat Beute von einer Großwildjagd an", "Jemand sitzt im Gammellook auf dem Sofa", "Der Fotograf oder Designer ist schwul",
-    		"Ana sagt was religiöses", "Es wird Freund oder Familie gezeigt", "Personality", "Arroganz", "Heidi sagt dummen Spruch/Sprichwort",
-    		"Heidi ist giga unlustig", "„Wer ist das?!“", "Werbung vor der Entscheidung"};
+    private String[] begriffe = {"<html>Ein Model weint", "<html>Es wird gekreischt", "<html>Heidi sagt „Meine Mädchen“",
+    		"<html>Jemand spricht unnötig Englisch", "<html>„Es kann nur eine GNTM werden“", "<html>„Ich habe heute leider kein Foto für dich“", 
+    		"<html>Jemand stolpert oder verliert einen Schuh beim walk", "<html>Heidi benutzt das Plusquamperfekt", 
+    		"<html>Attitude", "<html>„Nur eine kommt auf das Cover der deutschen Harpers Bazar“", "Die Mädchen werden gefittet", 
+    		"<html>Soulin ist in einen Streit verwickelt", "<html>Linda sagt/macht was unsympatisches", "<html>Fotograf ist unzufrieden",
+    		"<html>Jemand sagt was Dummes", "<html>Jemand ist neidisch", "<html>Schuhe oder Kleid unbequem oder passen nicht",
+    		"<html>Ein Mädchen wackelt", "<html>Es wird auf Corona Maßnahmen hingewiesen", "<html>Diversity", "<html>Es wird gelästert",
+    		"<html>Lilliana ist ne Zicke", "<html>Ein Mädchen vermisst Familie/Freund", "<html>Es wird etwas geblurrt/zensiert",
+    		"<html>„Das gab es noch nie bei GNTM!“", "<html>„Wer hat das Zeug GNTM zu werden?“", "<html>„Das allein reicht leider nicht“",
+    		"<html>Corona Handshake", "<html>Schleichwerbung", "<html>Klamotten in denen man nicht laufen kann", "<html>Gastjuror, den keiner kennt",
+    		"<html>Jemand hat Beute von einer Großwildjagd an", "<html>Jemand sitzt im Gammellook auf dem Sofa", "<html>Der Fotograf oder Designer ist schwul",
+    		"<html>Ana sagt was religiöses", "<html>Es wird Freund oder Familie gezeigt", "<html>Personality", "Arroganz", "<html>Heidi sagt dummen Spruch/Sprichwort",
+    		"<html>Heidi ist giga unlustig", "<html>„Wer ist das?!“", "<html>Werbung vor der Entscheidung"};
     
     public Brett() {
     	feld = new int[6][6];													  // neues Array
@@ -45,6 +45,7 @@ public class Brett implements BingoBoard {
     
     public void shuffleBoard() {
 		Random rand = new Random();
+
 		
 		for (int i = 0; i<begriffe.length; i++) {
 			int randomIndexToSwap = rand.nextInt(begriffe.length);
