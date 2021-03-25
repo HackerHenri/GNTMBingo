@@ -13,6 +13,10 @@ import javax.swing.JPanel;
 
 public class BingoFrame extends JFrame implements ActionListener{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	//private BingoPanel panel ;
 	private JPanel contentPane ;
 	private JLabel message ;

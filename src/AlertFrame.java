@@ -6,7 +6,6 @@ import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -15,11 +14,14 @@ import javax.swing.JPanel;
 
 public class AlertFrame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel panel;
 	private JButton okButton;
 	private JLabel label;
 	private JLabel pic;
-	private String file;
 	
 	public AlertFrame() {
 		super("BINGO!");
@@ -38,7 +40,7 @@ public class AlertFrame extends JFrame {
 		label.setFont(schrift);
 		label.setText("Nice Bingo!");
 		
-		ImageIcon icon = new ImageIcon("/images/klatschen.png");
+//		ImageIcon icon = new ImageIcon("/images/klatschen.png");
 //		pic.setIcon(createImageIcon("images/bodybuilderme.jpg","random"));
 		
 		c.gridx=0;
@@ -49,13 +51,13 @@ public class AlertFrame extends JFrame {
 		c.weighty = 1;
 		panel.add(label,c);
 		
-		c.gridx=0;
-		c.gridy=2;
-		c.gridwidth=3;
-		c.gridheight=3;
-		c.weightx = 1;
-		c.weighty = 1;
-		panel.add(pic,c);
+//		c.gridx=0;
+//		c.gridy=2;
+//		c.gridwidth=3;
+//		c.gridheight=3;
+//		c.weightx = 1;
+//		c.weighty = 1;
+//		panel.add(pic,c);
 		
 		c.gridx=1;
 		c.gridy=5;

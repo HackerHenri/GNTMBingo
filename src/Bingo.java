@@ -1,10 +1,8 @@
-import java.awt.Color;
-import java.awt.color.*;
+
 public class Bingo extends Spiel implements BingoCtrl{
 
 	
 	private BingoFrame fenster;
-	private AlertFrame alert;
 	private int size = 5;
 	int x = 0;
 	int y = 0;
@@ -136,7 +134,6 @@ public class Bingo extends Spiel implements BingoCtrl{
 		}
 		if(istBeendet(brett) == true) {
 			fenster.setMeldung("Bingo!");
-			alert = new AlertFrame();
 //			for (int a=0; a<6; a++) {
 //				for (int b=0; b<6; b++) {
 //					if(brett.getFeld(a, b) == 1) {

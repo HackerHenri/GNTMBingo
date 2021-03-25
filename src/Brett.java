@@ -3,7 +3,6 @@
  * Programm: Bingo
  * Datum: 12.03.2021
  */
-import java.util.Arrays;
 import java.util.Random;
 
 public class Brett implements BingoBoard {
