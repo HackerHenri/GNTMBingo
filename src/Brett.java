@@ -12,7 +12,7 @@ public class Brett implements BingoBoard {
     		"<html>Jemand spricht unnötig Englisch", "<html>„Es kann nur eine GNTM werden“", "<html>„Ich habe heute leider kein Foto für dich“", 
     		"<html>Jemand stolpert oder verliert einen Schuh beim walk", "<html>Heidi benutzt das Plusquamperfekt", 
     		"<html>Attitude", "<html>„Nur eine kommt auf das Cover der deutschen Harpers Bazar“",
-    		"<html>Soulin ist in einen Streit verwickelt", "<html>Linda sagt/macht was unsympatisches", "<html>Fotograf/Gastjuror ist unzufrieden",
+    		"<html>Soulin ist in einen Streit verwickelt", "<html>Fotograf/Gastjuror ist unzufrieden",
     		"<html>Jemand sagt was Dummes", "<html>Jemand ist neidisch", "<html>Schuhe oder Kleid unbequem oder passen nicht",
     		"<html>Ein Mädchen wackelt", "<html>Diversity", "<html>Es wird gelästert",
     		"<html>Ein Mädchen vermisst Familie/Freund", "<html>Es wird etwas geblurrt/zensiert",
